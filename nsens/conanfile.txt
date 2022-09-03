@@ -1,0 +1,10 @@
+[requires]
+gtest/cci.20210126
+spdlog/1.10.0
+nng/1.5.2
+qcbor/1.0
+
+[generators]
+cmake_find_package
+cmake_paths
+
