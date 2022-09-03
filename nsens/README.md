@@ -1,3 +1,7 @@
+# nsens
+
+## Build
+
 ```bash
 $ mkdir build && cd build
 $ conan profile update settings.compiler.libcxx=libstdc++11 default
