@@ -13,10 +13,12 @@ file(WRITE ${PROJECT_BINARY_DIR}/nsensconfig.hpp.in "
 find_package(spdlog REQUIRED)
 find_package(nng REQUIRED)
 find_package(qcbor REQUIRED)
+find_package(toml11 REQUIRED)
 
 add_library(nsens
     include/nsens/nsens.hpp
     nsens.cpp
+    config.hpp
     BME68x-Sensor-API-4.4.7/bme68x.c
     BME68x-Sensor-API-4.4.7/bme68x.h
     BME68x-Sensor-API-4.4.7/bme68x_defs.h
@@ -38,6 +40,7 @@ target_link_libraries(nsens
     spdlog::spdlog
     nng::nng
     qcbor::qcbor
+    toml11::toml11
 )
 
 add_library(nsens::nsens ALIAS nsens)

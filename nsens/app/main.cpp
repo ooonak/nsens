@@ -4,7 +4,7 @@
 
 int main()
 {
-  nsens::NSens::version();
+  nsens::NSens sensor("");
 
   return 0;
 }
